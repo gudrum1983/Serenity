@@ -1,0 +1,36 @@
+@import url('../vendor/fonts/fonts.css');
+@import url('../blocks/Typography/index.css');
+@import url('../blocks/MainLayout/index.css');
+@import url('../blocks/Header/index.css');
+@import url('../blocks/Navigation/index.css');
+@import url('../blocks/Section/index.css');
+@import url('../blocks/Button/index.css');
+
+:root {
+    --bg-white: #FFF;
+    --bg-dark: #222;
+    --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
+    --PRIMARY-COLORS-OCEANIC: #38535D;
+    --PRIMARY-COLORS-WHITE: #FFF;
+    --SUPPORTING-COLORS-IRONS: #55565A;
+    --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
+    --white: #FFF;
+    --FFFFFF: #FFF;
+    --D5C9BE: #D5C9BE;
+    --282829: #282829;
+    --EFCFAD: #EFCFAD;
+    --222222: #222;
+    --282829B2: #282829B2;
+    --55565A: #55565A;
+    --A4907D: #A4907D;
+    --38535D: #38535D;
+    --D6D6D6: #D6D6D6;
+     position: relative;
+     color: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
