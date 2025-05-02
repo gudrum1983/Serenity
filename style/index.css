@@ -1,9 +1,9 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
-@import url('../blocks/MainLayout/index.css');
+@import url('../blocks/Discover/index.css');
 @import url('../blocks/Header/index.css');
 @import url('../blocks/Navigation/index.css');
-@import url('../blocks/Section/index.css');
+@import url('../blocks/Features/index.css');
 @import url('../blocks/Button/index.css');
 
 :root {
