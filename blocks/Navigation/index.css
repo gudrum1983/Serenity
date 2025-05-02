@@ -1,0 +1,15 @@
+.Navigation {
+    width: fit-content;
+}
+
+.Navigation__list {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    gap: 29px;
+    list-style: none;
+}
+
+.Navigation__item {
+    color: var(--PRIMARY-COLORS-WHITE);
+}
