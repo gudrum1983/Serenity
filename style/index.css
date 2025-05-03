@@ -1,19 +1,23 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
+@import url('../blocks/Button/index.css');
 @import url('../blocks/Discover/index.css');
 @import url('../blocks/Header/index.css');
 @import url('../blocks/Navigation/index.css');
 @import url('../blocks/Features/index.css');
-@import url('../blocks/Button/index.css');
+@import url('../blocks/Schedule/index.css');
 
 :root {
+    display: flex;
     --bg-white: #FFF;
+    --BG-WHITE: #FFF;
     --bg-dark: #222;
     --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
     --PRIMARY-COLORS-OCEANIC: #38535D;
     --PRIMARY-COLORS-WHITE: #FFF;
     --SUPPORTING-COLORS-IRONS: #55565A;
     --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
+    --SECONDARY-COLOR-SUPPORTING-COLORS-IRON:  #55565A;
     --white: #FFF;
     --FFFFFF: #FFF;
     --D5C9BE: #D5C9BE;
@@ -27,6 +31,14 @@
     --D6D6D6: #D6D6D6;
      position: relative;
      color: #FFF;
+    background: #282829;
+}
+
+
+#body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
 }
 
 * {

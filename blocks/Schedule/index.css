@@ -1,0 +1,172 @@
+.Schedule {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 161px;
+}
+
+.Schedule__Layout {
+    border-radius: 30px;
+    border: 2px solid #D5C9BE;
+    background: #FFF;
+}
+
+.Schedule__FormBox {
+    padding: 72px 134px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Schedule__Form {
+    max-width: 774px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+}
+
+.Schedule__FormTitle {
+    z-index: 2;
+    width: 100%;
+    color: #38535D;
+    font-family: Prata, serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 59.4px */
+    margin-bottom: 45px;
+}
+
+.Schedule__FormInput {
+    display: flex;
+    height: 65px;
+    padding: 13.877px 20.815px 13.877px 38.161px;
+    align-items: center;
+    gap: 8.673px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 2px solid #D6D6D6;
+    background: var(--white, #FFF);
+    color: var(--SECONDARY-COLOR-SUPPORTING-COLORS-IRON, #55565A);
+    font-family: Arial, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    z-index: 2;
+}
+
+
+.Schedule__FormCheck  {
+    z-index: 2;
+    color: var(--SECONDARY-COLOR-SUPPORTING-COLORS-IRON, #55565A);
+
+    font-family: Arial, serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 24.7px */
+
+
+}
+
+.Schedule__FormFields {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+}
+
+.background-block {
+    position: relative;
+    z-index: 1;
+}
+
+/* первая картинка */
+.background-block::before {
+    content: '';
+    position: absolute;
+    right: 91px;
+    height: calc(100% + 129px + 3px);
+    bottom: -2px;
+    width: 600px;
+    background-image: url('../../images/form_2.png');
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+
+/* вторая картинка */
+.background-block::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    height: calc(100% + 5px);
+    width: calc(100% + 3px); /* или нужная ширина */
+    background-image: url('../../images/form_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.Schedule__Submit {
+    z-index: 2;
+}
+
+.checkbox {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    z-index: 2;
+}
+
+.checkbox-label {
+    color: var(--SECONDARY-COLOR-SUPPORTING-COLORS-IRON, #55565A);
+    font-family: Arial, serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 24.7px */
+
+}
+
+.checkbox-input {
+    appearance: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    /*background: #C56FFF;*/
+/*    box-shadow: inset 0 0 5px rgb(0 0 0 / 0.2);*/
+color: var(--PRIMARY-COLORS-OCEANIC, #405D65);
+    border-radius: 4px;
+    border: 2px solid var(--PRIMARY-COLORS-OCEANIC, #405D65);
+    background: var(--BG-WHITE, #FFF);
+}
+
+.checkbox-input::after {
+    content: "\2714";
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    font-size: 20px;
+    line-height: 24px;
+
+
+    overflow: hidden;
+}
+
+.checkbox-input:checked::after {
+    width: 24px;
+    height: 24px;
+
+}
