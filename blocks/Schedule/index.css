@@ -89,7 +89,7 @@
     position: absolute;
     right: 91px;
     height: calc(100% + 129px + 3px);
-    bottom: -3px;
+    bottom: -2px;
     width: 600px;
     background-image: url('../../images/form_2.png');
     background-size: cover;
