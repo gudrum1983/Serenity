@@ -6,6 +6,8 @@
 
 .Discover__Layout {
     width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -41,7 +43,7 @@
 
 
 .Discover__Image {
-    width: 40%;
+    width: 40vw;
     height: 100vh;
     max-width: 763px;
     object-fit: cover;
