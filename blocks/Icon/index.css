@@ -1,0 +1,28 @@
+.Icon {
+    width: 32px;
+    height: 32px;
+}
+
+.Icon__social_ins {
+background-image: url('../../images/icons/icon_inst.svg');
+}
+
+.Icon__social_face {
+    background-image: url('../../images/icons/icon_face.svg');
+}
+
+.Icon__social_in {
+    background-image: url('../../images/icons/icon_in.svg');
+}
+
+.Icon__social_tic {
+    background-image: url('../../images/icons/icon_tic.svg');
+}
+
+.Icon__social_tlg {
+    background-image: url('../../images/icons/icon_tlg.svg');
+}
+
+.Icon__social_yt {
+    background-image: url('../../images/icons/icon_yt.svg');
+}

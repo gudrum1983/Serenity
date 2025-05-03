@@ -1,0 +1,8 @@
+.Section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Section_colum {
+    max-width: 1920px;
+}
