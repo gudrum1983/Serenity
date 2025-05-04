@@ -1,6 +1,7 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
 @import url('../blocks/Link/index.css');
+@import url('../blocks/MarkerList/index.css');
 @import url('../blocks/Container/index.css');
 @import url('../blocks/Button/index.css');
 @import url('../blocks/Discover/index.css');
@@ -12,53 +13,54 @@
 @import url('../blocks/Icon/index.css');
 
 :root {
-    /*PRIMARY VAR*/
-    --PRIMARY-BG: #282829;
-    --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
-    --PRIMARY-COLORS-OCEANIC: #38535D;
-    --PRIMARY-COLORS-WHITE: #FFF;
+  /*PRIMARY VAR*/
+  --PRIMARY-BG: #282829;
+  --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
+  --PRIMARY-COLORS-OCEANIC: #38535D;
+  --PRIMARY-COLORS-WHITE: #FFF;
 
-    /*ACCENT VAR*/
-    --ACCENT-BG: #222222;
+  /*ACCENT VAR*/
+  --ACCENT-BG: #222;
 
-    /*SECONDARY VAR*/
-    --SECONDARY-COLOR-SUPPORTING-COLORS-IRON: #55565A;
+  /*SECONDARY VAR*/
+  --SECONDARY-COLOR-SUPPORTING-COLORS-IRON: #55565A;
 
-    /*SUPPORTING VAR*/
-    --SUPPORTING-BG: #FFF;
-    --SUPPORTING-COLORS-IRONS: #55565A;
-    --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
+  /*SUPPORTING VAR*/
+  --SUPPORTING-BG: #FFF;
+  --SUPPORTING-COLORS-IRONS: #55565A;
+  --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
 
-    --white: #FFF;
-    --FFFFFF: #FFF;
-    --D5C9BE: #D5C9BE;
-    --282829: #282829;
-    --EFCFAD: #EFCFAD;
-    --222222: #222;
-    --282829B2: #282829B2;
-    --55565A: #55565A;
-    --A4907D: #A4907D;
-    --38535D: #38535D;
-    --D6D6D6: #D6D6D6;
-    --transition:  all linear 0.6s;
+  --white: #FFF;
+  --FFFFFF: #FFF;
+  --D5C9BE: #D5C9BE;
+  --282829: #282829;
+  --EFCFAD: #EFCFAD;
+  --222222: #222;
+  --282829B2: #282829B2;
+  --55565A: #55565A;
+  --A4907D: #A4907D;
+  --38535D: #38535D;
+  --D6D6D6: #D6D6D6;
+  --transition: all linear 0.6s;
+  --boundary-padding: 162px;
 }
 
 
 #body {
-color: var(--PRIMARY-COLORS-WHITE);
-    position: relative;
-    background: #282829;
+  color: var(--PRIMARY-COLORS-WHITE);
+  position: relative;
+  background: #282829;
 
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }

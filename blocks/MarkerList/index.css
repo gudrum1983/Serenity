@@ -1,0 +1,35 @@
+.PromoList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: fit-content;
+  align-items: flex-start;
+}
+
+.PromoList-Item {
+  border-radius: 4px;
+  background: rgba(40, 40, 41, 0.70);
+  width: fit-content;
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+  gap: 7px;
+}
+
+.PromoList li {
+  position: relative;
+  padding-left: calc(39px + 17px); /* отступ под маркер */
+}
+
+.PromoList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  background-image: url("../../images/price.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

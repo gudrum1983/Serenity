@@ -1,16 +1,16 @@
 .Navigation {
-    width: fit-content;
+  width: fit-content;
 }
 
 .Navigation-List {
-    display: flex;
-    flex-direction: row;
-    gap: 29px;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  list-style: none;
 }
 
 .Navigation_gap_big {
-    .Navigation__list {
-        gap: 60px;
-    }
+  .Navigation__list {
+    gap: 60px;
+  }
 }
