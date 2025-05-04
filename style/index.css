@@ -1,7 +1,8 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
 @import url('../blocks/Link/index.css');
-@import url('../blocks/MarkerList/index.css');
+@import url('../blocks/ListPromo/index.css');
+@import url('../blocks/ListFeatures/index.css');
 @import url('../blocks/Container/index.css');
 @import url('../blocks/Button/index.css');
 @import url('../blocks/Discover/index.css');

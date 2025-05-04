@@ -1,0 +1,39 @@
+.ListFeatures {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ListFeatures-Item {
+  position: relative;
+  padding-left: calc(58px + 20px);
+  padding-block: 32px;
+  border-bottom: 1px solid #55565A;
+}
+
+.ListFeatures-Item:first-child {
+  padding-block-start: 0;
+}
+
+.ListFeatures-Item:last-child {
+  padding-block-end: 0;
+  border-bottom: none;
+}
+
+
+.ListFeatures-Item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 58px;
+  height: 47px;
+  background-image: url("../../images/marker_2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ListFeatures-Item:first-child::before {
+  top: 0;
+}

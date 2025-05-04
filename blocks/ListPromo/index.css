@@ -1,4 +1,4 @@
-.PromoList {
+.ListPromo {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   align-items: flex-start;
 }
 
-.PromoList-Item {
+.ListPromo-Item {
   border-radius: 4px;
   background: rgba(40, 40, 41, 0.70);
   width: fit-content;
@@ -17,12 +17,12 @@
   gap: 7px;
 }
 
-.PromoList li {
+.ListPromo li {
   position: relative;
   padding-left: calc(39px + 17px); /* отступ под маркер */
 }
 
-.PromoList li::before {
+.ListPromo li::before {
   content: "";
   position: absolute;
   left: 0;
