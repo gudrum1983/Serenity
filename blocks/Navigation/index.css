@@ -1,15 +1,16 @@
 .Navigation {
-    width: fit-content;
+  width: fit-content;
 }
 
-.Navigation__list {
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    gap: 29px;
-    list-style: none;
+.Navigation-List {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  list-style: none;
 }
 
-.Navigation__item {
-    color: var(--PRIMARY-COLORS-WHITE);
+.Navigation_gap_big {
+  .Navigation__list {
+    gap: 60px;
+  }
 }

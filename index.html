@@ -1,156 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Serenity</title>
-    <link rel="stylesheet" href="style/index.css"/>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Serenity Park</title>
+  <link href="style/index.css" rel="stylesheet"/>
 </head>
 <body id="body">
-<header class="Header">
-    <div class="Header__panel">
-        <div class="Header__layout">
-        <h1 class="TextLogo">Serenity</h1>
-        <nav class="Navigation" aria-label="Main navigation">
-            <ul class="Navigation__list">
-                <li><a href="#discover" class="Navigation__item TextNavigation">Discover</a></li>
-                <li><a href="#features" class="Navigation__item TextNavigation">Features</a></li>
-                <li><a href="#schedule" class="Navigation__item TextNavigation">Schedule Visit</a></li>
-            </ul>
-        </nav>
-    </div>
-        </div>
+
+<header class="Header" id="header">
+  <div class="Header-Layout Container">
+    <h1 class="Text Text_type_logo">Serenity Park</h1>
+    <nav aria-label="Main navigation" class="Navigation Text Text_type_navLink">
+      <ul class="Navigation-List">
+        <li><a class="Link Link_navigation" href="#discover">Discover</a></li>
+        <li><a class="Link Link_navigation" href="#features">Features</a></li>
+        <li><a class="Link Link_navigation" href="#schedule">Schedule Visit</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
 <main>
-    <section id="discover" class="Discover Section">
-        <div class="Discover__Layout">
-            <div class="Discover__Content">
-                <h2 class="Discover__Title">Lorem ipsum <br/>
-                    dolor sit amet</h2>
+  <section class="Discover" id="discover">
+    <div class="Discover-Layout Container">
+      <div class="Discover-Content">
+        <h2 class="Discover-Title Text Text_type_title">Lorem ipsum<br/>dolor sit amet</h2>
+        <h3 class="Discover-Subtitle Text Text_type_subtitle">sed do eiusmod tempor</h3>
+        <ul class="Discover-Promo ListPromo Text Text_type_caption">
+          <li class="ListPromo-Item" id="Comfort">от <b>$10 000</b> инвестиция в престиж</li>
+          <li class="ListPromo-Item" id="Spaciousness"><b>30%</b> первый взнос на особых условиях</li>
+          <li class="ListPromo-Item" id="Prestige">до <b>17%</b> Ипотека от ведущих банков</li>
+        </ul>
+        <button class="Button Text Text_button_discover">Order</button>
+      </div>
+      <img alt="Main image" class="Discover-Image" src="images/main.png"/>
+    </div>
+  </section>
 
-                <div class="Discover__Caption">
-                    <h3 class="Discover__CaptionSubTitle">sed do eiusmod tempor</h3>
-                    <ul class="Discover__CaptionList">
-                        <li class="Discover__CaptionItem TextCaptionItem" id="Comfort">
-                            <div>
-                                <p>от </p><span>$10 000</span>
-                                <p> Инвестиция в престиж</p>
-                            </div>
-                        </li>
-                        <li class="Discover__CaptionItem TextCaptionItem" id="Spaciousness">
-                            <div>
-                                <span>30%</span>
-                                <p>первый взнос на особых условиях</p>
-                            </div>
-                        </li>
-                        <li class="Discover__CaptionItem TextCaptionItem" id="Prestige">
-                            <div>
-                                <p>до <span>17%</span> Ипотека от ведущих банков</p>
-                            </div>
-                        </li>
+  <section class="Features Container" id="features">
+    <div class="Features-Layout">
+      <div class="Features-BoxImage">
+        <img alt="Main image" class="Features-Image" src="images/feat_1.png"/>
+      </div>
+      <div class="Features-Content">
+        <ul class="ListFeatures Text Text_type_features">
+          <li class="ListFeatures-Item">
+            Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
+          </li>
+          <li class="ListFeatures-Item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          </li>
+          <li class="ListFeatures-Item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          </li>
+          <li class="ListFeatures-Item">
+            Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          </li>
+        </ul>
+        <button class="Button Button_type_short Text Text_button_features">Order</button>
+      </div>
+      <div class="Features-BoxImage">
+        <img alt="Main image" class="Features-Image" src="images/feat_2.png"/>
+      </div>
+    </div>
+  </section>
 
-                    </ul>
-                    <button class="Button Button__fit">Order</button>
-                </div>
+  <section class="Schedule Container" id="schedule">
+    <div class="Schedule-Layout">
+      <div class="Schedule-BoxForm ">
+        <h4 class="Schedule-Title Text Text_type_titleForm">Consectetur <br/>
+          sed do eiusmod</h4>
+        <form class="Schedule-Form">
+          <div class="Schedule-Fields">
+            <div class="Field">
+              <label class="Field-Label Field-Label_hidden" for="Name">Введите ваше имя</label>
+              <input class="Field-Input Text" id="Name" name="Name" placeholder="Name" type="text"/>
             </div>
-            <img class="Discover__Image" src="images/main.png" alt="Main image"/>
-
-        </div>
-    </section>
-
-    <section id="features" class="Features Section Section_colum">
-        <div class="Features__Layout">
-            <div class="Features__ImageLeft">
-                <!-- <img class="Features__ImageLeft" src="images/feat_1.png" alt="Main image"/>-->
+            <div class="Field">
+              <label class="Field-Label Field-Label_hidden" for="Email">Введите ваш email</label>
+              <input class="Field-Input Text" id="Email" name="Email" placeholder="Email" type="email"/>
             </div>
-
-            <div class="Features__Content">
-                <ul class="Features__List">
-                    <li class="Features__Item">
-                        <div>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
-                        </div>
-                    </li>
-                    <li class="Features__Item">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor 
-                        </div>
-                    </li>
-                    <li class="Features__Item">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        </div>
-                    </li>
-                    <li class="Features__Item">
-                        <div>Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor 
-                        </div>
-                    </li>
-                </ul>
-                <button class="Button">Order</button>
-            </div>
-            <div class="Features__ImageRight">
-                <!--        <img class="Features__ImageRight" src="images/feat_2.png" alt="Main image"/>-->
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <section id="schedule" class="Schedule Section Section_colum">
-        <div class="Schedule__Layout  background-block">
-            <div class="Schedule__FormBox ">
-                <h4 class="Schedule__FormTitle">Consectetur <br/>
-                    sed do eiusmod</h4>
-                <form class="Schedule__Form">
-                    <div class="Schedule__FormFields">
-                        <input class="Schedule__FormInput" type="text" placeholder="Name"/>
-                        <input class="Schedule__FormInput" type="email" placeholder="Email"/>
-                    </div>
-
-
-                    <div class="checkbox">
-                        <input class="checkbox-input" type="checkbox" id="checkbox2">
-                        <label class="checkbox-label" for="checkbox2">
-                            I accept Privacy policy
-                        </label>
-                    </div>
-
-                    <button class="Schedule__Submit Button Button_type_dark">Submit Form</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer class="Footer">
-
-        <div class="Footer__top">
-            <nav class="Footer__nav">
-                <a href="#Comfort" class="Footer__nav-item">Comfort</a>
-                <a href="#Spaciousness" class="Footer__nav-item">Spaciousness</a>
-                <a href="#Prestige" class="Footer__nav-item">Prestige</a>
-            </nav>
-        </div>
-
-        <div class="Footer__bottom">
-
-            <div class="Footer__logo">LOREM</div>
-            <div class="Footer__socials Footer__center">
-                <a ><div class="Icon  Icon__social_ins"></div></a>
-                <a ><div class="Icon  Icon__social_tic"></div></a>
-                <a ><div class="Icon  Icon__social_in"></div></a>
-                <a ><div class="Icon  Icon__social_face"></div></a>
-                <a ><div class="Icon  Icon__social_tlg"></div></a>
-                <a ><div class="Icon  Icon__social_yt"></div></a>
-            </div>
-            <button class="Button Button__fit Footer__button">Order</button>
-
-            <div class="Footer__copyright">© 2024, Copyright.</div>
-            <a class="Footer__link Footer__center" href="/docs/Privacy_policy.pdf" download="Privacy_policy.pdf">Privacy policy</a>
-            <a class="Footer__link Footer__button" href="/docs/Terms_of_Use.pdf" download="Serenity_Terms.pdf">Terms of Use</a>
-        </div>
-    </footer>
-
+          </div>
+          <div class="Field Field_checkbox">
+            <input class="Field-Input" id="checkbox" type="checkbox">
+            <label class="Field-Label Text Text_type_label" for="checkbox">I accept Privacy policy</label>
+          </div>
+          <button class="Schedule-Submit Button Button_type_dark Text Text_button_form" type="submit">Submit Form</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
-<!--<script src="js/script.js"></script>-->
+
+<footer class="Footer">
+  <div class="Footer-TopPanel">
+    <nav class="Navigation Navigation_gap_big Text Text_type_navLinkBig Container">
+      <ul class="Navigation-List">
+        <li><a class="Link Link_navigation" href="#Comfort">Comfort</a></li>
+        <li><a class="Link Link_navigation" href="#Spaciousness">Spaciousness</a></li>
+        <li><a class="Link Link_navigation" href="#Prestige">Prestige</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="Footer-BottomGrid Container">
+
+    <div class="Footer-GridItem Footer-GridItem_place_start Text Text_type_logo">Serenity Park</div>
+    <div class="Footer-GridItem Footer__socials">
+      <a class="Icon Icon__social_ins"></a>
+      <a class="Icon Icon__social_tic"></a>
+      <a class="Icon Icon__social_in"></a>
+      <a class="Icon Icon__social_face"></a>
+      <a class="Icon Icon__social_tlg"></a>
+      <a class="Icon Icon__social_yt"></a>
+    </div>
+    <button class="Footer-GridItem Footer-GridItem_place_end Button Button__fit Text Text_button_footer">Order</button>
+
+    <div class="Footer-GridItem Footer-GridItem_place_start">© 2024, Copyright.</div>
+    <a class="Footer-GridItem Link Text Text_type_link" download="Privacy_policy.pdf" href="/docs/Privacy_policy.pdf">
+      Privacy policy
+    </a>
+    <a class="Footer-GridItem_place_end Link Text Text_type_link" download="Serenity_Terms.pdf" href="/docs/Terms_of_Use.pdf">
+      Terms of Use
+    </a>
+  </div>
+</footer>
+
+
+<script src="index.js"></script>
 </body>
 </html>

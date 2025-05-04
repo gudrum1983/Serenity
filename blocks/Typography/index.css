@@ -1,40 +1,103 @@
-.TextNavigation {
-    font-family: Arial, serif;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.64px;
-    text-transform: uppercase;
-    text-decoration-line: none;
-    text-wrap: nowrap;
+.Text {
+  font-family: Arial, serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-.TextLogo {
+.Text_type_link {
+  font-size: 20px;
+}
+
+.Text_type_navLink {
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.Text_type_navLinkBig {
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  font-style: italic;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+.Text_type_logo {
+  font-family: Prata Regular, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  padding-top: 4px;
+  text-transform: uppercase;
+}
+
+.Text_type_caption {
+  line-height: 110%; /* 26.4px */
+
+  b {
     font-family: Prata Regular, sans-serif;
-    font-size: 36px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 54px */
-    letter-spacing: 1.08px;
-    padding-top: 4px;
+    line-height: 37px;
+    letter-spacing: 1.6px;
     text-transform: uppercase;
+    padding-right: 8px;
+    padding-top: 4px;
+    margin-bottom: -3px;
+  }
 }
 
-.TextCaptionItem {
-    font-family: Arial, serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 26.4px */
+.Text_type_features {
+  line-height: 140%;
+}
 
-    span {
-        font-family: Prata, serif;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 40px;
-        letter-spacing: 1.6px;
-        text-transform: uppercase;
-    }
+.Text_type_title {
+  font-family: Prata Regular, sans-serif;
+  font-size: 80px;
+  line-height: 120%; /* 96px */
+}
+
+.Text_type_titleForm  {
+  font-family: Prata Regular, sans-serif;
+  font-size: 54px;
+  line-height: 110%;
+}
+
+.Text_type_label {
+  font-size: 19px;
+  line-height: 130%;
+}
+
+.Text_type_subtitle {
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.Text_button_footer {
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.Text_button_discover {
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.Text_button_features {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.Text_button_form {
+  text-transform: uppercase;
 }

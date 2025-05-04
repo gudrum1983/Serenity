@@ -1,102 +1,36 @@
 .Footer {
-    color: #FFF;
-    font-family: Arial, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-    background-color: #222222;
-
+  background-color: var(--ACCENT-BG);
 }
 
-.Footer__top {
-    border-top: 2px solid #D5C9BE;
-    border-bottom: 2px solid #D5C9BE;
-    padding-block: 40px;
-    color: #FFF;
-}
-
-.Footer__nav {
-    justify-content: center;
-    display: flex;
-    gap: 60px;
-    font-family: Arial, serif;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
+.Footer-TopPanel {
+  border-top: 2px solid var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
+  border-bottom: 2px solid var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
+  padding-block: 40px;
 }
 
 
-.Footer__nav-item {
-    color: #FFF;
-    text-align: right;
-    font-family: Arial, serif;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    text-decoration: none;
+.Footer-BottomGrid {
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  padding: 43px var(--BOUNDARY-PADDING) 60px;
+  display: grid;
+  row-gap: 38px;
 }
-
-
-.Footer__logo {
-    align-self: center;
-    justify-self: start;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: Prata, serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 54px */
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-}
-
-.Footer__copyright {
-    align-self: center;
-    justify-self: start;
-}
-
-
-.Footer__link {
-    color: #D5C9BE;
-    font-family: Arial, serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-    text-decoration: none;
-}
-
-.Footer__bottom {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: stretch;
-    padding: 43px 162px 60px;
-    display: grid;
-    row-gap: 38px;
-}
-
 
 .Footer__socials {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
-.Footer__button {
-    align-self: center;
-    justify-self: end;
+.Footer-GridItem {
+  place-self: center center;
 }
 
-.Footer__center {
-    align-self: center;
-    justify-self: center;
+.Footer-GridItem_place_end {
+  justify-self: end;
+}
+
+.Footer-GridItem_place_start {
+  justify-self: start;
 }
