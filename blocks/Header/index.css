@@ -1,34 +1,12 @@
 .Header {
     position: fixed;
     width: 100%;
+}
+
+.Header-Layout {
     display: flex;
-    justify-content: center;
-    height: fit-content;
-    color: var(--PRIMARY-COLORS-WHITE);
-
-    .Header__panel {
-
-        width: 100%;
-        max-width: 1920px;
-
-    }
-
-
-    .Header__layout {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        column-gap: 100px;
-        padding: 30px 0 30px 162px;
-        width: 100%;
-        max-width: 60%;
-    }
-
-    @media (max-width: 1440px) {
-        .Header__layout {
-            flex-direction: column;
-            gap: 10px;
-            max-width: 100%;
-            align-items: flex-start;
-        }
-    }}
+    align-items: center;
+    justify-content: start;
+    column-gap: 100px;
+    padding: 30px 162px;
+}

@@ -8,22 +8,20 @@
 </head>
 <body id="body">
 <header class="Header">
-    <div class="Header__panel">
-        <div class="Header__layout">
-        <h1 class="TextLogo">Serenity</h1>
-        <nav class="Navigation" aria-label="Main navigation">
-            <ul class="Navigation__list">
-                <li><a href="#discover" class="Navigation__item TextNavigation">Discover</a></li>
-                <li><a href="#features" class="Navigation__item TextNavigation">Features</a></li>
-                <li><a href="#schedule" class="Navigation__item TextNavigation">Schedule Visit</a></li>
+    <div class="Header-Layout Container">
+        <h1 class="Text Text_type_logo">Serenity</h1>
+        <nav class="Navigation Text Text_type_navLink" aria-label="Main navigation">
+            <ul class="Navigation-List">
+                <li><a href="#discover" class="Link Link_navigation">Discover</a></li>
+                <li><a href="#features" class="Link Link_navigation">Features</a></li>
+                <li><a href="#schedule" class="Link Link_navigation">Schedule Visit</a></li>
             </ul>
         </nav>
     </div>
-        </div>
 </header>
 <main>
-    <section id="discover" class="Discover Section">
-        <div class="Discover__Layout">
+    <section id="discover" class="Discover">
+        <div class="Discover__Layout Container">
             <div class="Discover__Content">
                 <h2 class="Discover__Title">Lorem ipsum <br/>
                     dolor sit amet</h2>
@@ -58,7 +56,7 @@
         </div>
     </section>
 
-    <section id="features" class="Features Section Section_colum">
+    <section id="features" class="Features Container">
         <div class="Features__Layout">
             <div class="Features__ImageLeft">
                 <!-- <img class="Features__ImageLeft" src="images/feat_1.png" alt="Main image"/>-->
@@ -97,15 +95,17 @@
 
     </section>
 
-    <section id="schedule" class="Schedule Section Section_colum">
+    <section id="schedule" class="Schedule Container">
         <div class="Schedule__Layout  background-block">
             <div class="Schedule__FormBox ">
                 <h4 class="Schedule__FormTitle">Consectetur <br/>
                     sed do eiusmod</h4>
                 <form class="Schedule__Form">
                     <div class="Schedule__FormFields">
-                        <input class="Schedule__FormInput" type="text" placeholder="Name"/>
-                        <input class="Schedule__FormInput" type="email" placeholder="Email"/>
+                        <label for="Name">Введите ваше имя</label>
+                        <input class="Schedule__FormInput" type="text" placeholder="Name" name="Name" id="Name"/>
+                        <label for="Email">Введите ваш email</label>
+                        <input class="Schedule__FormInput" type="email" placeholder="Email" name="Email" id="Email"/>
                     </div>
 
 
@@ -124,16 +124,18 @@
     <footer class="Footer">
 
         <div class="Footer__top">
-            <nav class="Footer__nav">
-                <a href="#Comfort" class="Footer__nav-item">Comfort</a>
-                <a href="#Spaciousness" class="Footer__nav-item">Spaciousness</a>
-                <a href="#Prestige" class="Footer__nav-item">Prestige</a>
+            <nav class="Navigation Navigation_gap_big Text Text_type_navLinkBig Container">
+                <ul class="Navigation-List">
+                    <li><a href="#Comfort" class="Link Link_navigation">Comfort</a></li>
+                    <li><a href="#Spaciousness" class="Link Link_navigation">Spaciousness</a></li>
+                    <li><a href="#Prestige" class="Link Link_navigation">Prestige</a></li>
+                </ul>
             </nav>
         </div>
 
-        <div class="Footer__bottom">
+        <div class="Footer__bottom Container">
 
-            <div class="Footer__logo">LOREM</div>
+            <div class="Footer__logo Text Text_type_logo">LOREM</div>
             <div class="Footer__socials Footer__center">
                 <a ><div class="Icon  Icon__social_ins"></div></a>
                 <a ><div class="Icon  Icon__social_tic"></div></a>
@@ -145,8 +147,8 @@
             <button class="Button Button__fit Footer__button">Order</button>
 
             <div class="Footer__copyright">© 2024, Copyright.</div>
-            <a class="Footer__link Footer__center" href="/docs/Privacy_policy.pdf" download="Privacy_policy.pdf">Privacy policy</a>
-            <a class="Footer__link Footer__button" href="/docs/Terms_of_Use.pdf" download="Serenity_Terms.pdf">Terms of Use</a>
+            <a class="Footer__link Footer__center Link" href="/docs/Privacy_policy.pdf" download="Privacy_policy.pdf">Privacy policy</a>
+            <a class="Footer__link Footer__button Link" href="/docs/Terms_of_Use.pdf" download="Serenity_Terms.pdf">Terms of Use</a>
         </div>
     </footer>
 

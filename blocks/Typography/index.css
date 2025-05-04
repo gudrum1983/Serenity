@@ -1,27 +1,43 @@
-.TextNavigation {
+.Text {
     font-family: Arial, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+
+.Text_type_link {
+    font-size: 20px;
+}
+
+.Text_type_navLink {
     font-size: 16px;
     font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
     letter-spacing: 0.64px;
     text-transform: uppercase;
-    text-decoration-line: none;
     text-wrap: nowrap;
 }
 
-.TextLogo {
+.Text_type_navLinkBig {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    font-style: italic;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+.Text_type_logo {
     font-family: Prata Regular, sans-serif;
     font-size: 36px;
     font-style: normal;
-    font-weight: 400;
     line-height: 150%; /* 54px */
     letter-spacing: 1.08px;
     padding-top: 4px;
     text-transform: uppercase;
 }
 
-.TextCaptionItem {
+.Text_type_caption {
     font-family: Arial, serif;
     font-size: 24px;
     font-style: normal;

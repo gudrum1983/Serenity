@@ -1,0 +1,18 @@
+.Link {
+    color: var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
+    text-decoration: none;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--PRIMARY-COLORS-WHITE);
+    }
+}
+
+
+.Link_navigation {
+    color: var(--PRIMARY-COLORS-WHITE);
+
+    &:hover {
+        color: var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
+    }
+}

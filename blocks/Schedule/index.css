@@ -104,7 +104,8 @@
     top: -3px;
     right: -2px;
     height: calc(100% + 5px);
-    width: calc(100% + 3px); /* или нужная ширина */
+    width: 50%;
+    /*width: calc(100% + 3px); !* или нужная ширина *!*/
     background-image: url('../../images/form_1.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,7 +149,7 @@
 color: var(--PRIMARY-COLORS-OCEANIC, #405D65);
     border-radius: 4px;
     border: 2px solid var(--PRIMARY-COLORS-OCEANIC, #405D65);
-    background: var(--BG-WHITE, #FFF);
+    background:  #FFF;
 }
 
 .checkbox-input::after {

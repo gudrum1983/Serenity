@@ -1,22 +1,18 @@
 .Discover {
     width: 100%;
-    height: 100vh;
     background: #222222;
 }
 
 .Discover__Layout {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
-    height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 50px 162px;
+    padding: 0 0 0 162px;
 }
 
 .Discover__Content {
     width: 60%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -44,7 +40,6 @@
 
 .Discover__Image {
     width: 40vw;
-    height: 100vh;
     max-width: 763px;
     object-fit: cover;
     display: block;

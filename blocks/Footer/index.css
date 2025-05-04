@@ -1,5 +1,4 @@
 .Footer {
-    color: #FFF;
     font-family: Arial, serif;
     font-size: 20px;
     font-style: normal;
@@ -13,7 +12,6 @@
     border-top: 2px solid #D5C9BE;
     border-bottom: 2px solid #D5C9BE;
     padding-block: 40px;
-    color: #FFF;
 }
 
 .Footer__nav {
@@ -27,42 +25,13 @@
     line-height: 150%; /* 30px */
     letter-spacing: 0.8px;
     text-transform: uppercase;
+
+
+
 }
 
 
-.Footer__nav-item {
-    color: #FFF;
-    text-align: right;
-    font-family: Arial, serif;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 
-
-.Footer__logo {
-    align-self: center;
-    justify-self: start;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: Prata, serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 54px */
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-}
-
-.Footer__copyright {
-    align-self: center;
-    justify-self: start;
-}
 
 
 .Footer__link {
@@ -91,12 +60,29 @@
 
 }
 
-.Footer__button {
-    align-self: center;
-    justify-self: end;
-}
 
 .Footer__center {
     align-self: center;
     justify-self: center;
+}
+
+.Footer__logo {
+    align-self: center;
+    justify-self: start;
+}
+
+.Footer__copyright {
+    align-self: center;
+    justify-self: start;
+}
+
+.Footer-GridSelf {
+    place-self: center center;
+}
+
+.Footer-GridSelf_place_end {
+    justify-self: end;
+}
+.Footer-GridSelf_place_start {
+    justify-self: start;
 }

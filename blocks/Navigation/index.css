@@ -2,14 +2,15 @@
     width: fit-content;
 }
 
-.Navigation__list {
+.Navigation-List {
     display: flex;
     flex-direction: row;
-    text-transform: uppercase;
     gap: 29px;
     list-style: none;
 }
 
-.Navigation__item {
-    color: var(--PRIMARY-COLORS-WHITE);
+.Navigation_gap_big {
+    .Navigation__list {
+        gap: 60px;
+    }
 }

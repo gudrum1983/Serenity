@@ -1,6 +1,7 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
-@import url('../blocks/Section/index.css');
+@import url('../blocks/Link/index.css');
+@import url('../blocks/Container/index.css');
 @import url('../blocks/Button/index.css');
 @import url('../blocks/Discover/index.css');
 @import url('../blocks/Header/index.css');
@@ -11,16 +12,23 @@
 @import url('../blocks/Icon/index.css');
 
 :root {
-
-    --bg-white: #FFF;
-    --BG-WHITE: #FFF;
-    --bg-dark: #222;
+    /*PRIMARY VAR*/
+    --PRIMARY-BG: #282829;
     --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
     --PRIMARY-COLORS-OCEANIC: #38535D;
     --PRIMARY-COLORS-WHITE: #FFF;
+
+    /*ACCENT VAR*/
+    --ACCENT-BG: #222222;
+
+    /*SECONDARY VAR*/
+    --SECONDARY-COLOR-SUPPORTING-COLORS-IRON: #55565A;
+
+    /*SUPPORTING VAR*/
+    --SUPPORTING-BG: #FFF;
     --SUPPORTING-COLORS-IRONS: #55565A;
     --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
-    --SECONDARY-COLOR-SUPPORTING-COLORS-IRON: #55565A;
+
     --white: #FFF;
     --FFFFFF: #FFF;
     --D5C9BE: #D5C9BE;
@@ -32,13 +40,14 @@
     --A4907D: #A4907D;
     --38535D: #38535D;
     --D6D6D6: #D6D6D6;
-    position: relative;
-    color: #FFF;
-    background: #282829;
+    --transition:  all linear 0.6s;
 }
 
 
 #body {
+color: var(--PRIMARY-COLORS-WHITE);
+    position: relative;
+    background: #282829;
 
 }
 
