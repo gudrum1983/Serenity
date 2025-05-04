@@ -1,7 +1,7 @@
 .Link {
   color: var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
   text-decoration: none;
-  transition: var(--transition);
+  transition: var(--TRANSITION);
 
   &:hover {
     color: var(--PRIMARY-COLORS-WHITE);

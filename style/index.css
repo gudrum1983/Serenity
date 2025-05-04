@@ -24,26 +24,14 @@
   /*ACCENT VAR*/
   --ACCENT-BG: #222;
 
-  /*SECONDARY VAR*/
-  --SECONDARY-COLOR-SUPPORTING-COLORS-IRON: #55565A;
-
   /*SUPPORTING VAR*/
   --SUPPORTING-BG: #FFF;
   --SUPPORTING-COLORS-IRONS: #55565A;
   --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
+  --SUPPORTING-COLORS-DUNE: #D6D6D6;
 
-  --white: #FFF;
-  --FFFFFF: #FFF;
-  --D5C9BE: #D5C9BE;
-  --282829: #282829;
-  --EFCFAD: #EFCFAD;
-  --222222: #222;
-  --282829B2: #282829B2;
-  --55565A: #55565A;
-  --A4907D: #A4907D;
-  --38535D: #38535D;
-  --D6D6D6: #D6D6D6;
-  --transition: all linear 0.6s;
+  /*OTHER VAR*/
+  --TRANSITION: all linear 0.6s;
   --BOUNDARY-PADDING: 162px;
   --RADIUS-BORDER: 30px;
   --RADIUS-BORDER-IMG: 24px;
@@ -53,7 +41,7 @@
 #body {
   color: var(--PRIMARY-COLORS-WHITE);
   position: relative;
-  background: #282829;
+  background: var(--PRIMARY-BG);
 
 }
 

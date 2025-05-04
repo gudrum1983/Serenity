@@ -8,7 +8,7 @@
 </head>
 <body id="body">
 
-<header class="Header">
+<header class="Header" id="header">
   <div class="Header-Layout Container">
     <h1 class="Text Text_type_logo">Serenity Park</h1>
     <nav aria-label="Main navigation" class="Navigation Text Text_type_navLink">
@@ -22,7 +22,7 @@
 </header>
 
 <main>
-  <section class="Discover Container" id="discover">
+  <section class="Discover" id="discover">
     <div class="Discover-Layout Container">
       <div class="Discover-Content">
         <h2 class="Discover-Title Text Text_type_title">Lorem ipsum<br/>dolor sit amet</h2>
@@ -32,7 +32,7 @@
           <li class="ListPromo-Item" id="Spaciousness"><b>30%</b> первый взнос на особых условиях</li>
           <li class="ListPromo-Item" id="Prestige">до <b>17%</b> Ипотека от ведущих банков</li>
         </ul>
-        <button class="Button Button__fit Text Text_button_discover">Order</button>
+        <button class="Button Text Text_button_discover">Order</button>
       </div>
       <img alt="Main image" class="Discover-Image" src="images/main.png"/>
     </div>
@@ -59,9 +59,9 @@
             Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor 
           </li>
         </ul>
-        <button class="Button Text Text_button_features">Order</button>
+        <button class="Button Button_type_short Text Text_button_features">Order</button>
       </div>
-      <div class="Features-BoxImage Features-BoxImage_opacity">
+      <div class="Features-BoxImage">
         <img alt="Main image" class="Features-Image" src="images/feat_2.png"/>
       </div>
     </div>
@@ -95,7 +95,7 @@
 </main>
 
 <footer class="Footer">
-  <div class="Footer__top">
+  <div class="Footer-TopPanel">
     <nav class="Navigation Navigation_gap_big Text Text_type_navLinkBig Container">
       <ul class="Navigation-List">
         <li><a class="Link Link_navigation" href="#Comfort">Comfort</a></li>
@@ -105,10 +105,10 @@
     </nav>
   </div>
 
-  <div class="Footer__bottom Container">
+  <div class="Footer-BottomGrid Container">
 
-    <div class="Footer__logo Text Text_type_logo">Serenity Park</div>
-    <div class="Footer__socials Footer__center">
+    <div class="Footer-GridItem Footer-GridItem_place_start Text Text_type_logo">Serenity Park</div>
+    <div class="Footer-GridItem Footer__socials">
       <a class="Icon Icon__social_ins"></a>
       <a class="Icon Icon__social_tic"></a>
       <a class="Icon Icon__social_in"></a>
@@ -116,19 +116,19 @@
       <a class="Icon Icon__social_tlg"></a>
       <a class="Icon Icon__social_yt"></a>
     </div>
-    <button class="Button Button__fit Footer__button Text Text_button_footer">Order</button>
+    <button class="Footer-GridItem Footer-GridItem_place_end Button Button__fit Text Text_button_footer">Order</button>
 
-    <div class="Footer__copyright">© 2024, Copyright.</div>
-    <a class="Footer__link Footer__center Link" download="Privacy_policy.pdf" href="/docs/Privacy_policy.pdf">
+    <div class="Footer-GridItem Footer-GridItem_place_start">© 2024, Copyright.</div>
+    <a class="Footer-GridItem Link Text Text_type_link" download="Privacy_policy.pdf" href="/docs/Privacy_policy.pdf">
       Privacy policy
     </a>
-    <a class="Footer__link Footer__button Link" download="Serenity_Terms.pdf" href="/docs/Terms_of_Use.pdf">
+    <a class="Footer-GridItem_place_end Link Text Text_type_link" download="Serenity_Terms.pdf" href="/docs/Terms_of_Use.pdf">
       Terms of Use
     </a>
   </div>
 </footer>
 
 
-<!--<script src="js/script.js"></script>-->
+<script src="index.js"></script>
 </body>
 </html>

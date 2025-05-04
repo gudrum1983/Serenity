@@ -1,24 +1,24 @@
 .Button {
   border: none;
   display: flex;
-  width: 100%;
-  height: 96px;
-  padding: 32px 50px;
+  padding: 30px 50px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: #FFF;
-  color: #222;
-
-}
-
-.Button__fit {
+  background: var(--PRIMARY-COLORS-WHITE);
+  color: var(--ACCENT-BG);
   width: fit-content;
 }
 
+.Button_type_short {
+  height: 78px;
+  width: 100%;
+}
+
 .Button_type_dark {
-  color: #FFF;
-  background: #282829;
+  width: 100%;
+  color: var(--PRIMARY-COLORS-WHITE);
+  background: var(--PRIMARY-BG);
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;

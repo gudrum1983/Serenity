@@ -3,6 +3,14 @@
   width: 100%;
 }
 
+.Header_type_scrolled {
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5
+}
+
+
+
 .Header-Layout {
   display: flex;
   align-items: center;

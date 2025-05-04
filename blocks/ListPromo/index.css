@@ -26,9 +26,9 @@
   content: "";
   position: absolute;
   left: 0;
-  top: calc(50% - 20px);
-  width: 40px;
-  height: 40px;
+  top: calc(50% - 18.5px);
+  width: 39px;
+  height: 37px;
   background-image: url("../../images/price.svg");
   background-size: contain;
   background-repeat: no-repeat;

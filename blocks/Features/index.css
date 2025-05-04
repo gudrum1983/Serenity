@@ -31,15 +31,3 @@
   object-fit: cover;
   display: block;
 }
-
-@media (min-width: 1921px) {
-  .Features-BoxImage {
-    border-radius: 24px 0 0 24px;
-    overflow: hidden;
-  }
-
-  .Features-BoxImage_opacity {
-    border-radius:  0 24px 24px 0;
-    overflow: hidden;
-  }
-}

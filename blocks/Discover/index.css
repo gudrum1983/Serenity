@@ -15,11 +15,11 @@
 }
 
 .Discover-Title {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .Discover-Subtitle {
-  margin-bottom: 64px;
+  margin-bottom: 50px;
 }
 
 .Discover-Promo {
@@ -34,11 +34,4 @@
   object-fit: cover;
   display: block;
   height: 100%;
-}
-
-@media (min-width: 1921px) {
-  .Discover {
-    border-radius:  24px;
-    overflow: hidden;
-  }
 }

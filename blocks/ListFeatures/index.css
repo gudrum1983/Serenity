@@ -9,7 +9,7 @@
   position: relative;
   padding-left: calc(58px + 20px);
   padding-block: 32px;
-  border-bottom: 1px solid #55565A;
+  border-bottom: 1px solid var(--SUPPORTING-COLORS-IRONS);
 }
 
 .ListFeatures-Item:first-child {
