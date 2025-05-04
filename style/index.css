@@ -1,6 +1,7 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/Typography/index.css');
 @import url('../blocks/Link/index.css');
+@import url('../blocks/Field/index.css');
 @import url('../blocks/ListPromo/index.css');
 @import url('../blocks/ListFeatures/index.css');
 @import url('../blocks/Container/index.css');
@@ -43,7 +44,9 @@
   --38535D: #38535D;
   --D6D6D6: #D6D6D6;
   --transition: all linear 0.6s;
-  --boundary-padding: 162px;
+  --BOUNDARY-PADDING: 162px;
+  --RADIUS-BORDER: 30px;
+  --RADIUS-BORDER-IMG: 24px;
 }
 
 

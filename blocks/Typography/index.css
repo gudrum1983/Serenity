@@ -61,9 +61,20 @@
   line-height: 120%; /* 96px */
 }
 
+.Text_type_titleForm  {
+  font-family: Prata Regular, sans-serif;
+  font-size: 54px;
+  line-height: 110%;
+}
+
+.Text_type_label {
+  font-size: 19px;
+  line-height: 130%;
+}
+
 .Text_type_subtitle {
   font-size: 50px;
-  line-height: 120%; /* 60px */
+  line-height: 120%;
 }
 
 .Text_button_footer {

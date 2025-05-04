@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Serenity</title>
+  <title>Serenity Park</title>
   <link href="style/index.css" rel="stylesheet"/>
 </head>
 <body id="body">
 
 <header class="Header">
   <div class="Header-Layout Container">
-    <h1 class="Text Text_type_logo">Serenity</h1>
+    <h1 class="Text Text_type_logo">Serenity Park</h1>
     <nav aria-label="Main navigation" class="Navigation Text Text_type_navLink">
       <ul class="Navigation-List">
         <li><a class="Link Link_navigation" href="#discover">Discover</a></li>
@@ -68,24 +68,26 @@
   </section>
 
   <section class="Schedule Container" id="schedule">
-    <div class="Schedule__Layout  background-block">
-      <div class="Schedule__FormBox ">
-        <h4 class="Schedule__FormTitle">Consectetur <br/>
+    <div class="Schedule-Layout">
+      <div class="Schedule-BoxForm ">
+        <h4 class="Schedule-Title Text Text_type_titleForm">Consectetur <br/>
           sed do eiusmod</h4>
-        <form class="Schedule__Form">
-          <div class="Schedule__FormFields">
-            <label for="Name">Введите ваше имя</label>
-            <input class="Schedule__FormInput" id="Name" name="Name" placeholder="Name" type="text"/>
-            <label for="Email">Введите ваш email</label>
-            <input class="Schedule__FormInput" id="Email" name="Email" placeholder="Email" type="email"/>
+        <form class="Schedule-Form">
+          <div class="Schedule-Fields">
+            <div class="Field">
+              <label class="Field-Label Field-Label_hidden" for="Name">Введите ваше имя</label>
+              <input class="Field-Input Text" id="Name" name="Name" placeholder="Name" type="text"/>
+            </div>
+            <div class="Field">
+              <label class="Field-Label Field-Label_hidden" for="Email">Введите ваш email</label>
+              <input class="Field-Input Text" id="Email" name="Email" placeholder="Email" type="email"/>
+            </div>
           </div>
-          <div class="checkbox">
-            <input class="checkbox-input" id="checkbox2" type="checkbox">
-            <label class="checkbox-label" for="checkbox2">
-              I accept Privacy policy
-            </label>
+          <div class="Field Field_checkbox">
+            <input class="Field-Input" id="checkbox" type="checkbox">
+            <label class="Field-Label Text Text_type_label" for="checkbox">I accept Privacy policy</label>
           </div>
-          <button class="Schedule__Submit Button Button_type_dark Text Text_button_form">Submit Form</button>
+          <button class="Schedule-Submit Button Button_type_dark Text Text_button_form" type="submit">Submit Form</button>
         </form>
       </div>
     </div>
@@ -105,7 +107,7 @@
 
   <div class="Footer__bottom Container">
 
-    <div class="Footer__logo Text Text_type_logo">LOREM</div>
+    <div class="Footer__logo Text Text_type_logo">Serenity Park</div>
     <div class="Footer__socials Footer__center">
       <a class="Icon Icon__social_ins"></a>
       <a class="Icon Icon__social_tic"></a>

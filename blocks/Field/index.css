@@ -1,0 +1,63 @@
+.Field {
+  z-index: 2;
+  color: var(--SECONDARY-COLOR-SUPPORTING-COLORS-IRON);
+}
+
+.Field-Input {
+  width: 100%;
+  height: 65px;
+  padding-inline: 40px;
+  border-radius: 4px;
+  border: 2px solid #D6D6D6;
+}
+
+.Field-Label_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.Field_checkbox {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+
+  .Field-Input {
+    padding: 0;
+    appearance: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: var(--PRIMARY-COLORS-OCEANIC, #405D65);
+    border-radius: 4px;
+    border: 2px solid var(--PRIMARY-COLORS-OCEANIC, #405D65);
+    background: #FFF;
+  }
+
+  .Field-Input::after {
+    content: "\2714";
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    font-size: 20px;
+    line-height: 24px;
+    overflow: hidden;
+  }
+
+  .Field-Input:checked::after {
+    width: 24px;
+    height: 24px;
+  }
+}

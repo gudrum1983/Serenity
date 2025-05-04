@@ -43,7 +43,7 @@
 .Footer__bottom {
   grid-template-columns: repeat(3, 1fr);
   justify-items: stretch;
-  padding: 43px var(--boundary-padding) 60px;
+  padding: 43px var(--BOUNDARY-PADDING) 60px;
   display: grid;
   row-gap: 38px;
 }

@@ -8,5 +8,5 @@
   align-items: center;
   justify-content: start;
   column-gap: 100px;
-  padding: 30px var(--boundary-padding);
+  padding: 30px var(--BOUNDARY-PADDING);
 }
