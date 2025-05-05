@@ -5,22 +5,25 @@
 .Footer-TopPanel {
   border-top: 2px solid var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
   border-bottom: 2px solid var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
-  padding-block: 40px;
+  padding-block: 30px;
 }
 
 
 .Footer-BottomGrid {
+  max-width: 1597px;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   justify-items: stretch;
   padding: 43px var(--BOUNDARY-PADDING) 60px;
   display: grid;
-  row-gap: 38px;
+  row-gap: 30px;
+  column-gap: 10px;
 }
 
 .Footer__socials {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 15px;
 }
 
 .Footer-GridItem {

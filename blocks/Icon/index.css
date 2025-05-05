@@ -1,28 +1,45 @@
 .Icon {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Icon__social_ins {
+.Icon-Social {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: var(--TRANSITION);
+  background-size: cover;
+  &:hover {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.Icon-Social_ins {
   background-image: url('../../images/icons/icon_inst.svg');
 }
 
-.Icon__social_face {
+.Icon-Social_face {
   background-image: url('../../images/icons/icon_face.svg');
 }
 
-.Icon__social_in {
+.Icon-Social_in {
   background-image: url('../../images/icons/icon_in.svg');
 }
 
-.Icon__social_tic {
+.Icon-Social_tic {
   background-image: url('../../images/icons/icon_tic.svg');
 }
 
-.Icon__social_tlg {
+.Icon-Social_tlg {
   background-image: url('../../images/icons/icon_tlg.svg');
 }
 
-.Icon__social_yt {
+.Icon-Social_yt {
   background-image: url('../../images/icons/icon_yt.svg');
 }

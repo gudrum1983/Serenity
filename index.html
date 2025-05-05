@@ -32,7 +32,7 @@
           <li class="ListPromo-Item" id="Spaciousness"><b>30%</b> первый взнос на особых условиях</li>
           <li class="ListPromo-Item" id="Prestige">до <b>17%</b> Ипотека от ведущих банков</li>
         </ul>
-        <button class="Button Text Text_button_discover">Order</button>
+        <a href="#schedule" class="Button Button_width_compact Text Text_button_discover">Order</a>
       </div>
       <img alt="Main image" class="Discover-Image" src="images/main.png"/>
     </div>
@@ -44,6 +44,7 @@
         <img alt="Main image" class="Features-Image" src="images/feat_1.png"/>
       </div>
       <div class="Features-Content">
+        <div class="Features-list">
         <ul class="ListFeatures Text Text_type_features">
           <li class="ListFeatures-Item">
             Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
@@ -59,7 +60,8 @@
             Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor 
           </li>
         </ul>
-        <button class="Button Button_type_short Text Text_button_features">Order</button>
+        </div>
+        <a href="#schedule" class="Features-Button Button Button_height_compact Text Text_button_features">Order</a>
       </div>
       <div class="Features-BoxImage">
         <img alt="Main image" class="Features-Image" src="images/feat_2.png"/>
@@ -83,11 +85,12 @@
               <input class="Field-Input Text" id="Email" name="Email" placeholder="Email" type="email"/>
             </div>
           </div>
-          <div class="Field Field_checkbox">
-            <input class="Field-Input" id="checkbox" type="checkbox">
-            <label class="Field-Label Text Text_type_label" for="checkbox">I accept Privacy policy</label>
+          <div class="Checkbox">
+            <label class="Checkbox-Label Text Text_type_label" for="checkbox">
+            <input class="Checkbox-Input" id="checkbox" type="checkbox">
+              <span>I accept Privacy policy</span></label>
           </div>
-          <button class="Schedule-Submit Button Button_type_dark Text Text_button_form" type="submit">Submit Form</button>
+          <button class="Schedule-Submit Button Button_type_accent Text" type="submit" disabled>Submit Form</button>
         </form>
       </div>
     </div>
@@ -105,24 +108,36 @@
     </nav>
   </div>
 
-  <div class="Footer-BottomGrid Container">
+  <div class="Footer-BottomGrid Container Text Text_type_link">
 
     <div class="Footer-GridItem Footer-GridItem_place_start Text Text_type_logo">Serenity Park</div>
     <div class="Footer-GridItem Footer__socials">
-      <a class="Icon Icon__social_ins"></a>
-      <a class="Icon Icon__social_tic"></a>
-      <a class="Icon Icon__social_in"></a>
-      <a class="Icon Icon__social_face"></a>
-      <a class="Icon Icon__social_tlg"></a>
-      <a class="Icon Icon__social_yt"></a>
+      <a class="Icon" href="https://www.instagram.com/lofigirl/">
+        <div class="Icon-Social Icon-Social_ins"></div>
+      </a>
+      <a class="Icon" href="https://www.tiktok.com/@lofigirl">
+        <div class="Icon-Social Icon-Social_tic"></div>
+      </a>
+      <a class="Icon" href="https://www.linkedin.com/company/lofi-girl/">
+        <div class="Icon-Social Icon-Social_in"></div>
+      </a>
+      <a class="Icon" href="https://www.facebook.com/lofigirl/">
+        <div class="Icon-Social Icon-Social_face"></div>
+      </a>
+      <a class="Icon" href="https://t.me/lofi_girl_music">
+        <div class="Icon-Social Icon-Social_tlg"></div>
+      </a>
+      <a class="Icon" href="https://www.youtube.com/@LofiGirl">
+        <div class="Icon-Social Icon-Social_yt"></div>
+      </a>
     </div>
-    <button class="Footer-GridItem Footer-GridItem_place_end Button Button__fit Text Text_button_footer">Order</button>
+    <a href="#schedule" class="Footer-GridItem Footer-GridItem_place_end Button Button_width_compact Button_height_compact Text Text_button_footer">Order</a>
 
     <div class="Footer-GridItem Footer-GridItem_place_start">© 2024, Copyright.</div>
-    <a class="Footer-GridItem Link Text Text_type_link" download="Privacy_policy.pdf" href="/docs/Privacy_policy.pdf">
+    <a class="Footer-GridItem Link" download="Privacy_policy.pdf" href="/docs/Privacy_policy.pdf">
       Privacy policy
     </a>
-    <a class="Footer-GridItem_place_end Link Text Text_type_link" download="Serenity_Terms.pdf" href="/docs/Terms_of_Use.pdf">
+    <a class="Footer-GridItem_place_end Link" download="Serenity_Terms.pdf" href="/docs/Terms_of_Use.pdf">
       Terms of Use
     </a>
   </div>

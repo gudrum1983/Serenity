@@ -2,9 +2,18 @@
   width: 100%;
   height: fit-content;
   padding: 100px var(--BOUNDARY-PADDING);
+  margin-inline: auto;
+}
+.Schedule_highlighted {
+  .Schedule-Layout {
+    animation: pulse-shadow 3s ease-out;
+  }
 }
 
 .Schedule-Layout {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1597px;
   border-radius: var(--RADIUS-BORDER);
   border: 2px solid var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
   background: var(--SUPPORTING-BG);
@@ -13,7 +22,7 @@
 }
 
 .Schedule-BoxForm {
-  padding: 72px 134px;
+  padding: 60px 140px 70px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,9 +37,12 @@
 
 .Schedule-Title {
   z-index: 2;
-  width: 100%;
+  padding: 10px 3px;
+  width: fit-content;
+  border-radius: var(--RADIUS-BORDER);
   color: var(--PRIMARY-COLORS-OCEANIC);
-  margin-bottom: 45px;
+  margin-bottom: 35px;
+  background: var(--SUPPORTING-BG-OPACITY);
 }
 
 .Schedule-Fields {
@@ -61,7 +73,7 @@
   top: -3px;
   right: -2px;
   height: calc(100% + 5px);
-  width: 50%;
+  width: 70%;
   background-image: url('../../images/form_1.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,4 +85,48 @@
 
 .Schedule-Submit {
   z-index: 2;
+}
+
+
+@keyframes pulse-shadow  {
+  0% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  15% {
+    box-shadow: 0 0 30px 10px var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  30% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  45% {
+    box-shadow: 0 0 30px 10px var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  60% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  75% {
+    box-shadow: 0 0 30px 10px var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+
+  }
+  90% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+}
+
+@media (max-width: 1470px) {
+  .Schedule-Layout::after {
+    width: calc(70% + 3px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .Schedule-Layout::after {
+    width: calc(95% + 3px);
+  }
+}
+
+@media (max-width: 950px) {
+  .Schedule-Layout::after {
+    width: calc(100% + 3px);
+  }
 }

@@ -2,7 +2,7 @@
   color: var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
   text-decoration: none;
   transition: var(--TRANSITION);
-
+  cursor: pointer;
   &:hover {
     color: var(--PRIMARY-COLORS-WHITE);
   }

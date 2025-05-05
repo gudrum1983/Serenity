@@ -12,17 +12,25 @@
 .Features-Content {
   width: 100%;
   flex-shrink: 1;
-  padding-inline: 53px;
+  padding: 53px 53px 0;
   max-width: calc(614px + 53px + 53px) ;
   min-width: calc(414px + 53px + 53px);
   display: flex;
-  gap: 80px;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.Features-List {
+  display: flex;
+  height: 100%;
+}
+
+.Features-Button {
+  margin-top: 75px;
+}
+
 .Features-BoxImage {
-  min-height: 724px;
+  min-height: calc(100%);
 }
 
 .Features-Image {
