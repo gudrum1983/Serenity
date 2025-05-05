@@ -8,7 +8,6 @@
   padding-block: 30px;
 }
 
-
 .Footer-BottomGrid {
   max-width: 1597px;
   width: 100%;
@@ -18,22 +17,94 @@
   display: grid;
   row-gap: 30px;
   column-gap: 10px;
+  grid-template-areas: "Logo Socials Button"
+  "Copyright Policy Terms";
 }
 
-.Footer__socials {
+.Footer-Socials {
   display: flex;
   flex-direction: row;
   gap: 15px;
-}
-
-.Footer-GridItem {
+  grid-area: Socials;
   place-self: center center;
 }
 
-.Footer-GridItem_place_end {
-  justify-self: end;
+.Footer-Button {
+  grid-area: Button;
+  place-self: center end;
 }
 
-.Footer-GridItem_place_start {
-  justify-self: start;
+.Footer-Logo {
+  grid-area: Logo;
+  place-self: center start;
+}
+
+.Footer-Copyright {
+  grid-area: Copyright;
+  place-self: center start;
+}
+
+.Footer-Policy {
+  grid-area: Policy;
+  place-self: center center;
+}
+
+.Footer-Terms {
+  grid-area: Terms;
+  place-self: center end;
+}
+
+@media (max-width: 950px) {
+  .Footer-BottomGrid {
+    grid-template-areas: "Logo Logo Logo"
+    "Socials Socials Socials"
+    "Button Button Button"
+   "Copyright Policy Terms";
+  }
+
+  .Footer-Button {
+    place-self: center center;
+  }
+
+  .Footer-Logo {
+    text-align: center;
+    place-self: center center;
+  }
+
+  .Footer-Copyright {
+    text-align: center;
+    place-self: center center;
+  }
+
+  .Footer-Policy {
+    text-align: center;
+    place-self: center center;
+  }
+
+  .Footer-Terms {
+    text-align: center;
+    place-self: center center;
+  }
+}
+
+@media (max-width: 950px) {
+  .Footer-BottomGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "Logo Logo"
+    "Socials Socials"
+    "Policy Button"
+   "Terms Button"
+     "Copyright Copyright";
+  }
+}
+
+@media (max-width: 420px) {
+  .Footer-Socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .Footer-Button {
+    place-self: center start;
+  }
 }

@@ -37,3 +37,15 @@
 .ListFeatures-Item:first-child::before {
   top: 0;
 }
+
+@media (max-width: 768px) {
+  .ListFeatures-Item::before {
+    width: 38px;
+    height: 32px;
+  }
+
+  .ListFeatures-Item {
+    padding-left: calc(38px + var(--BOUNDARY-PADDING));
+  }
+
+}
