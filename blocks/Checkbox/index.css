@@ -1,0 +1,61 @@
+.Checkbox {
+  z-index: 2;
+}
+
+.Checkbox-Label {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+  cursor: pointer;
+  color: var(--SUPPORTING-COLORS-IRONS);
+
+  span {
+    background-color: var(--SUPPORTING-BG-OPACITY);
+    border-radius: 4px;
+    padding-inline: 4px;
+  }
+}
+
+
+.Checkbox-Input {
+  padding: 0 0 0 16px;
+  appearance: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: var(--SUPPORTING-COLORS-DUNE);
+  border-radius: 4px;
+  border: 2px solid var(--SUPPORTING-COLORS-DUNE);
+  background: var(--SUPPORTING-BG);
+  cursor: pointer;
+  transition: var(--TRANSITION);
+
+
+  &:checked {
+    border-color: var(--PRIMARY-COLORS-OCEANIC);
+    color: var(--PRIMARY-COLORS-OCEANIC);
+  }
+
+
+}
+
+.Checkbox-Input::after {
+  content: "\2714";
+  position: absolute;
+  top: -1px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  font-size: 20px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.Checkbox-Input:checked::after {
+  width: 24px;
+  height: 24px;
+}

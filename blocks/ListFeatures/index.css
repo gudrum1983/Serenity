@@ -8,7 +8,7 @@
 .ListFeatures-Item {
   position: relative;
   padding-left: calc(58px + 20px);
-  padding-block: 32px;
+  padding-block: 30px;
   border-bottom: 1px solid var(--SUPPORTING-COLORS-IRONS);
 }
 

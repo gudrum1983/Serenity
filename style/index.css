@@ -2,6 +2,7 @@
 @import url('../blocks/Typography/index.css');
 @import url('../blocks/Link/index.css');
 @import url('../blocks/Field/index.css');
+@import url('../blocks/Checkbox/index.css');
 @import url('../blocks/ListPromo/index.css');
 @import url('../blocks/ListFeatures/index.css');
 @import url('../blocks/Container/index.css');
@@ -17,24 +18,29 @@
 :root {
   /*PRIMARY VAR*/
   --PRIMARY-BG: #282829;
+  --PRIMARY-BG-OPACITY: #282829B3;
   --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
+  --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY: #D5C9BEB2;
   --PRIMARY-COLORS-OCEANIC: #38535D;
   --PRIMARY-COLORS-WHITE: #FFF;
 
   /*ACCENT VAR*/
   --ACCENT-BG: #222;
+  --ACCENT-BG-OPACITY: #222222B3;
 
   /*SUPPORTING VAR*/
   --SUPPORTING-BG: #FFF;
+  --SUPPORTING-BG-OPACITY: #FFFFFFB3;
   --SUPPORTING-COLORS-IRONS: #55565A;
-  --SUPPORTING-COLORS-IRONS-opacity: #55565AB3;
+  --SUPPORTING-COLORS-IRONS-OPACITY: #55565AB2;
   --SUPPORTING-COLORS-DUNE: #D6D6D6;
 
   /*OTHER VAR*/
   --TRANSITION: all linear 0.6s;
-  --BOUNDARY-PADDING: 162px;
+  --BOUNDARY-PADDING: clamp(50px, 5%, 162px);
   --RADIUS-BORDER: 30px;
   --RADIUS-BORDER-IMG: 24px;
+
 }
 
 
@@ -42,6 +48,7 @@
   color: var(--PRIMARY-COLORS-WHITE);
   position: relative;
   background: var(--PRIMARY-BG);
+  scroll-behavior: smooth;
 
 }
 

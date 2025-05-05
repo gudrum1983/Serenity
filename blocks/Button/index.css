@@ -7,19 +7,41 @@
   border-radius: 4px;
   background: var(--PRIMARY-COLORS-WHITE);
   color: var(--ACCENT-BG);
+  width: 100%;
+  text-transform: uppercase;
+  transition: var(--TRANSITION);
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background: var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE);
+  }
+
+  &:disabled {
+    background: var(--SUPPORTING-COLORS-DUNE);
+    cursor: not-allowed;
+  }
+}
+
+.Button_width_compact {
   width: fit-content;
 }
 
-.Button_type_short {
-  height: 78px;
-  width: 100%;
+
+.Button_height_compact {
+  max-height: 78px;
 }
 
-.Button_type_dark {
-  width: 100%;
+.Button_type_accent {
   color: var(--PRIMARY-COLORS-WHITE);
   background: var(--PRIMARY-BG);
-  text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
+  padding: 32px 50px;
+  &:hover {
+    background: var(--PRIMARY-COLORS-OCEANIC);
+  }
+  &:disabled {
+    background: var(--SUPPORTING-COLORS-DUNE);
+    cursor: not-allowed;
+  }
+
 }
+

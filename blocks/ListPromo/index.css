@@ -9,12 +9,13 @@
 
 .ListPromo-Item {
   border-radius: 4px;
-  background: rgba(40, 40, 41, 0.70);
+  background: var(--PRIMARY-BG-OPACITY);
   width: fit-content;
   display: flex;
   padding-right: 20px;
   align-items: center;
   gap: 7px;
+  transition: var(--TRANSITION);
 }
 
 .ListPromo li {
@@ -32,4 +33,40 @@
   background-image: url("../../images/price.svg");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.ListPromo-Item_highlighted {
+  animation: promo-pulse-shadow 3s ease-out;
+}
+
+
+@keyframes promo-pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  15% {
+    box-shadow: 0 0 20px 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  30% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 20px 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  45% {
+    box-shadow: 0 0 20px 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  60% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 20px 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  75% {
+    box-shadow: 0 0 20px 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+  90% {
+    box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
+    inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
 }
