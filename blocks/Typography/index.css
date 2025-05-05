@@ -101,3 +101,54 @@
 .Text_copyright {
   font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  .Text {
+    font-size: 16px;
+  }
+
+  .Text_type_link {
+    font-size: 14px;
+  }
+
+  .Text_type_navLink {
+    font-size: 11px;
+  }
+
+  .Text_type_navLinkBig {
+    font-size: 14px;
+  }
+
+  .Text_type_logo {
+    font-size: 24px;
+  }
+
+  .Text_type_caption {
+    b {
+      font-size: 27px;
+      line-height: 24px;
+    }
+  }
+
+  .Text_type_title {
+    font-size: 54px;
+  }
+
+  .Text_type_titleForm {
+    font-size: 36px;
+  }
+
+  .Text_type_label {
+    font-size: 13px;
+  }
+
+  .Text_type_subtitle {
+    font-size: 33px;
+  }
+
+  .Text_button_footer,
+  .Text_button_features,
+  .Text_copyright {
+    font-size: 14px;
+  }
+}

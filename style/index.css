@@ -18,6 +18,7 @@
 :root {
   /*PRIMARY VAR*/
   --PRIMARY-BG: #282829;
+  --PRIMARY-BG-OPACITY-LIGHT: #55565A4D;
   --PRIMARY-BG-OPACITY: #282829B3;
   --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE: #D5C9BE;
   --PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY: #D5C9BEB2;
@@ -49,6 +50,8 @@
   position: relative;
   background: var(--PRIMARY-BG);
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-width: 320px;
 
 }
 
@@ -62,4 +65,22 @@ main {
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --BOUNDARY-PADDING: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --BOUNDARY-PADDING: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --BOUNDARY-PADDING: 5px;
+  }
 }

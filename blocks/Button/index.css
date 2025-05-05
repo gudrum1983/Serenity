@@ -45,3 +45,15 @@
 
 }
 
+
+@media (max-width: 768px) {
+  .Button {
+    padding: 20px 33px;
+  }
+  .Button_type_accent {
+    padding: 21px 33px;
+    }
+  .Button_height_compact {
+    max-height: 52px;
+  }
+}

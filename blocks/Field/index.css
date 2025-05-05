@@ -42,3 +42,10 @@
     white-space: nowrap;
     border: 0;
 }
+
+@media (max-width: 768px) {
+  .Field-Input {
+    height: 43px;
+    padding-inline: 26px;
+    }
+}

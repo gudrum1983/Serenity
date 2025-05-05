@@ -121,12 +121,38 @@
 
 @media (max-width: 1024px) {
   .Schedule-Layout::after {
-    width: calc(95% + 3px);
+    width: calc(100% + 3px);
   }
 }
 
 @media (max-width: 950px) {
-  .Schedule-Layout::after {
-    width: calc(100% + 3px);
+  .Schedule-BoxForm {
+    padding-inline: 80px;
   }
+}
+
+@media (max-width: 768px) {
+  .Schedule-BoxForm {
+    padding-inline: 40px;
+  }
+
+  /* первая картинка - девушка*/
+  .Schedule-Layout::before {
+    right: -90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Schedule-BoxForm {
+    padding-inline: var(--BOUNDARY-PADDING);
+  }
+
+  .Schedule {
+    padding-inline: 0;
+  }
+
+  .Schedule-Layout {
+    border-radius: 0;
+  }
+
 }

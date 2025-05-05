@@ -16,6 +16,7 @@
   align-items: center;
   gap: 7px;
   transition: var(--TRANSITION);
+  flex-wrap: wrap;
 }
 
 .ListPromo li {
@@ -68,5 +69,13 @@
   90% {
     box-shadow: 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY),
     inset 0 0 0 0 var(--PRIMARY-COLOR-APPLICATIONS-DARK-DUNE-OPACITY);
+  }
+}
+
+@media (max-width: 768px) {
+  .ListPromo li::before {
+    width: 27px;
+    height: 25px;
+    top: calc(50% - 12.5px);
   }
 }

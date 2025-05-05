@@ -7,6 +7,9 @@
   flex-direction: row;
   gap: 29px;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .Navigation_gap_big {
