@@ -33,9 +33,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
 
-        console.log(id);
-
-
         // Подсвечиваем только нужные якоря
         if (highlightAnchors.includes(id)) {
             target.classList.add('ListPromo-Item_highlighted');
@@ -61,9 +58,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 target.classList.remove('Schedule_highlighted');
             }, 3000);
         }
-
-
-
     });
 });
 
@@ -82,15 +76,12 @@ document.addEventListener('DOMContentLoaded', function () {
         submitButton.disabled = !(isNameFilled && isEmailFilled && isChecked);
     }
 
-    // Слушаем изменения всех нужных полей
     form.elements.Name.addEventListener('input', validateForm);
     form.elements.Email.addEventListener('input', validateForm);
     form.elements.checkbox.addEventListener('change', validateForm);
 
-    // Первичная проверка
     validateForm();
 
-    // Обработка отправки формы
     form.addEventListener('submit', function (e) {
         e.preventDefault(); // отменяем перезагрузку
 
@@ -98,9 +89,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
         alert(`Пользователь с Именем: ${Name.value.trim()}\n
         и Email: ${Email.value.trim()} установил чекбокс в значение ${checkbox.value.trim()}`);
-
-        // Необязательно: очистка формы и деактивация кнопки
-        // form.reset();
-        // validateForm();
     });
 });
