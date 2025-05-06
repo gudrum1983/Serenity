@@ -1,5 +1,5 @@
-@import url('../vendor/fonts/fonts.css');
-@import url('../blocks/Typography/index.css');
+@import url('../assets/fonts/fonts.css');
+@import url('../blocks/Text/index.css');
 @import url('../blocks/Link/index.css');
 @import url('../blocks/Field/index.css');
 @import url('../blocks/Checkbox/index.css');

@@ -60,7 +60,7 @@
   height: calc(100% + 129px + 3px);
   bottom: -2px;
   width: 600px;
-  background-image: url('../../images/form_2.png');
+  background-image: url('../../assets/images/form_2.png');
   background-size: cover;
   background-position: top;
   z-index: 1;
@@ -74,7 +74,7 @@
   right: -2px;
   height: calc(100% + 5px);
   width: 70%;
-  background-image: url('../../images/form_1.png');
+  background-image: url('../../assets/images/form_1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;

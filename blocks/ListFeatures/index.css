@@ -1,4 +1,7 @@
 .ListFeatures {
+  --marker: calc(32px + (47 - 32) * (100vw - 320px) / (1920 - 320));
+  --marker-width: clamp(38px, calc(var(--marker) * 1.45), 58px);
+  --marker-height: clamp(32px, var(--marker), 47px);
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -6,19 +9,25 @@
 }
 
 .ListFeatures-Item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
-  padding-left: calc(58px + 20px);
+  padding-left: calc(var(--marker-width) + 20px);
   padding-block: 30px;
   border-bottom: 1px solid var(--SUPPORTING-COLORS-IRONS);
+  min-height: calc(51px + 40px + 40px);
 }
 
 .ListFeatures-Item:first-child {
   padding-block-start: 0;
+  min-height: calc(51px + 40px);
 }
 
 .ListFeatures-Item:last-child {
   padding-block-end: 0;
   border-bottom: none;
+  min-height: calc(51px + 40px);
 }
 
 
@@ -27,25 +36,13 @@
   position: absolute;
   left: 0;
   top: 40px;
-  width: 58px;
-  height: 47px;
-  background-image: url("../../images/marker_2.svg");
+  width: var(--marker-width);
+  height: var(--marker-height);
+  background-image: url("../../assets/icons/marker_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .ListFeatures-Item:first-child::before {
   top: 0;
-}
-
-@media (max-width: 768px) {
-  .ListFeatures-Item::before {
-    width: 38px;
-    height: 32px;
-  }
-
-  .ListFeatures-Item {
-    padding-left: calc(38px + var(--BOUNDARY-PADDING));
-  }
-
 }
