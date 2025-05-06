@@ -9,7 +9,7 @@
 }
 
 .Footer-BottomGrid {
-  max-width: 1597px;
+  max-width: calc(1597px + (var(--BOUNDARY-PADDING) * 2));
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   justify-items: stretch;
@@ -87,24 +87,20 @@
   }
 }
 
-@media (max-width: 950px) {
-  .Footer-BottomGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "Logo Logo"
-    "Socials Socials"
-    "Policy Button"
-   "Terms Button"
-     "Copyright Copyright";
-  }
-}
-
 @media (max-width: 420px) {
   .Footer-Socials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
   }
-  .Footer-Button {
-    place-self: center start;
+
+  .Footer-BottomGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "Logo"
+    "Socials"
+    "Button"
+    "Policy"
+    "Terms"
+    "Copyright";
   }
 }

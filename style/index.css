@@ -44,6 +44,10 @@
 
 }
 
+html {
+  overflow-y: scroll; /* always reserve vertical scrollbar space */
+}
+
 
 #body {
   color: var(--PRIMARY-COLORS-WHITE);
@@ -51,8 +55,6 @@
   background: var(--PRIMARY-BG);
   scroll-behavior: smooth;
   overflow-x: hidden;
-  min-width: 320px;
-
 }
 
 * {
