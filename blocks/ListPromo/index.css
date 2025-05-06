@@ -34,7 +34,7 @@
   top: calc(50% - (var(--marker-height) / 2));
   width: var(--marker-width);
   height: var(--marker-height);
-  background-image: url("../../images/price.svg");
+  background-image: url("../../assets/icons/price.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }

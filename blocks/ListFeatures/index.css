@@ -38,7 +38,7 @@
   top: 40px;
   width: var(--marker-width);
   height: var(--marker-height);
-  background-image: url("../../images/marker_2.svg");
+  background-image: url("../../assets/icons/marker_2.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
